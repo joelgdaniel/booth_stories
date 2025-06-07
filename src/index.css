@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f0d4cd;
+  --secondary-color: #e0c1ba;
+  --accent-color: #000000;
+  --text-color: #222222;
+  --background-color: #faf4f2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background font-poppins text-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair text-accent;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-md font-medium tracking-wide transform transition duration-300 ease-in-out hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-accent border-2 border-accent px-6 py-3 rounded-md font-medium tracking-wide transform transition duration-300 ease-in-out hover:bg-accent/5;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-6 text-accent;
+  }
+
+  .sparkle {
+    @apply absolute w-6 h-6 text-accent opacity-80;
+  }
+}
+
+/* Custom star animation */
+.star-animation {
+  animation: twinkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Card hover effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Polaroid frame effect */
+.polaroid {
+  @apply bg-white p-2 pt-2 pb-8 shadow-md transform rotate-0 transition-transform duration-300 ease-in-out;
+}
+
+.polaroid:hover {
+  transform: rotate(-2deg) translateY(-8px);
+}
