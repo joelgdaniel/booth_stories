@@ -5,27 +5,27 @@ import { useInView } from 'react-intersection-observer';
 
 const galleryImages = [
   {
-    src: "/public/1.jpg",
+    src: "/1.jpg",
     alt: "Friends taking photos in photobooth"
   },
   {
-    src: "/public/5.jpg",//images.pexels.com/photos/3972135/pexels-photo-3972135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/5.jpg",//images.pexels.com/photos/3972135/pexels-photo-3972135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Couple taking selfie in photobooth"
   },
   {
-    src: "/public/3.jpg",//images.pexels.com/photos/10990069/pexels-photo-10990069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/3.jpg",//images.pexels.com/photos/10990069/pexels-photo-10990069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Wedding photobooth strip"
   },
   {
-    src: "/public/4.jpg",
+    src: "/4.jpg",
     alt: "Corporate event photobooth"
   },
   {
-    src: "/public/2.jpg",
+    src: "/2.jpg",
     alt: "Birthday photobooth"
   },
   {
-    src: "/public/6.jpg",
+    src: "/6.jpg",
     alt: "Party photobooth setup"
   }
 ];

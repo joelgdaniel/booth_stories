@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <div className="aspect-[3/4] relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="public/heroimage.jpg" 
+                src="/heroimage.jpg" 
                 alt="Photo booth experience" 
                 className="w-full h-full object-cover"
               />
